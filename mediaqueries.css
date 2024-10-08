@@ -14,19 +14,9 @@
 }
 
 @media screen and (max-width: 1200px) {
-  #theme-switch {
-    top: 45px;
-    right: 3px;
-  }
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    display: flex;
+  header {
+    padding: 1rem 2rem;
+    gap: 2rem;
   }
   #profile {
     display: flex;
@@ -64,14 +54,53 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  #theme-switch {
-    top: 45px;
-    right: 3px;
+@media (max-width: 768px) {
+  header {
+    gap: 1rem;
+    padding: 1rem 1rem;
   }
+  header .logo {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header #menu-icon {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 3rem;
+    display: none;
+  }
+  .nav-links li {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: block;
+  }
+  header {
+    padding: 1rem 1rem;
+    gap: 4rem;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+  }
+
   #contact,
   footer {
-    height: 40vh;
+    height: 15vh;
   }
   #profile {
     height: 83vh;
@@ -80,10 +109,7 @@
   article {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
+
   .about-pic {
     width: 200px;
     height: 203px;
@@ -102,14 +128,6 @@
   }
   .experience-sub-title {
     font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
   }
   .section__pic-container {
     width: auto;
