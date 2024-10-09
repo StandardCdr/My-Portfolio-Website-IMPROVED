@@ -65,14 +65,14 @@
       <div class="section__pic-container">
         <img
           src="./assets/3.jpg"
-          alt="John Doe profile picture"
+          alt="JB Torres profile picture"
           class="profilepicture"
         />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">JB Torres</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p2"><span class="typing"></span></p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -124,7 +124,8 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img src="./assets/2.jpg" alt="Profile picture" class="about-pic" />
+          <img src="./assets/2.jpg" alt="Profile picture" class="about-pic"
+          onmouseover="changeImage(1,this)" onmouseout="changeImage(2,this)" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
@@ -401,6 +402,7 @@
     <footer>
       <p>Copyright &#169; 2024 JB Andrew Torres. All Rights Reserved</p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="darkmode.js" defer></script>
     <script src="script.js"></script>

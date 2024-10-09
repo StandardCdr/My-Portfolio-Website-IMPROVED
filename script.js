@@ -17,3 +17,21 @@ ScrollReveal().reveal("#about", { origin: "bottom" });
 ScrollReveal().reveal("#skills", { origin: "left" });
 ScrollReveal().reveal("#projects", { origin: "right" });
 ScrollReveal().reveal("#contact", { origin: "bottom" });
+
+/*typing */
+
+var typed = new Typed(".typing", {
+  strings: ["Front End Developer", "Web Developer"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true,
+});
+
+function changeImage(x, image) {
+  if (x == 1) {
+    image.src = "./assets/4.jpg";
+  }
+  if (x == 2) {
+    image.src = "./assets/2.jpg";
+  }
+}
