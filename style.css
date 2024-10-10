@@ -416,9 +416,9 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
-#experience {
+#skills {
   position: relative;
 }
 
@@ -436,7 +436,7 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -472,6 +472,33 @@ article .icon {
 
 .project-title {
   margin: 1rem;
+}
+
+.used {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 15px;
+}
+
+.html,
+.css,
+.js {
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1px;
+  border: none;
+  padding: 2px 10px 2px;
+  border-radius: 10px;
+  background-color: #ff6133;
+}
+
+.css {
+  background-color: #1e90ff;
+}
+
+.js {
+  background-color: #f0db4f;
 }
 
 .project-btn {
