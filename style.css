@@ -477,13 +477,14 @@ article .icon {
 .used {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   gap: 15px;
 }
 
 .html,
 .css,
-.js {
+.js,
+.bs {
   font-weight: bold;
   border-style: solid;
   border-width: 1px;
@@ -499,6 +500,10 @@ article .icon {
 
 .js {
   background-color: #f0db4f;
+}
+
+.bs {
+  background-color: #7952b3;
 }
 
 .project-btn {
