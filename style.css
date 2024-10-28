@@ -84,13 +84,6 @@ li a:hover::before {
   --primary-color: #3a435d;
   --accent-color: #0071ff;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-family: Poppins;
-}
 body {
   min-height: 100vh;
   background-color: var(--base-color);
@@ -484,7 +477,8 @@ article .icon {
 .html,
 .css,
 .js,
-.bs {
+.bs,
+.figma {
   font-weight: bold;
   border-style: solid;
   border-width: 1px;
@@ -507,6 +501,13 @@ article .icon {
   grid-column: 1 / -1;
   justify-self: center;
   margin-top: -15px;
+}
+
+.figma {
+  background: linear-gradient(45deg, #ff7262, #a259ff, #1abcfe, #0acf83);
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 10px;
 }
 
 .project-btn {
