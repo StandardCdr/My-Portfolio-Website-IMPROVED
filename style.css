@@ -478,33 +478,38 @@ article .icon {
 .css,
 .js,
 .bs,
-.figma {
+.figma,
+.framer {
   font-weight: bold;
   border-style: solid;
   border-width: 1px;
   border: none;
   padding: 2px 10px 2px;
   border-radius: 10px;
-  background-color: #ff6133;
+  background: linear-gradient(115deg, #fec163, #de4313);
 }
 
 .css {
-  background-color: #1e90ff;
+  background: linear-gradient(115deg, #62cff4, #2c67f2);
 }
 
 .js {
-  background-color: #f0db4f;
+  background: linear-gradient(115deg, #fdeb71, #f8d800);
+}
+
+.framer {
+  background: linear-gradient(115deg, #047caf, #a8e4ea);
 }
 
 .bs {
-  background-color: #7952b3;
+  background: linear-gradient(115deg, #e2b0ff, #9f44d3);
   grid-column: 1 / -1;
   justify-self: center;
   margin-top: -15px;
 }
 
 .figma {
-  background: linear-gradient(45deg, #ff7262, #a259ff, #1abcfe, #0acf83);
+  background: linear-gradient(115deg, #d16ba5, #86a8e7, #5ffbf1);
   grid-column: 1 / -1;
   justify-self: center;
   margin-top: 10px;
